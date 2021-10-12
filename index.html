@@ -5,10 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1 class="text-red-500 text-2xl">Hello World! from Hendrid</h1>
+    <nav class="bg-white shadow-lg">
+		<div class="max-w-6xl mx-auto px-4">
+			<div class="flex justify-between">
+				<div class="flex space-x-7">
+					<!-- Website Logo -->
+					<div>
+						<a href="#" class="flex items-center py-4 px-2">
+							<img src="img/sunflowerlogo.PNG" alt="Logo" class="h-8 w-8 mr-2" />
+							<span class="font-semibold text-gray-500 text-lg"
+								>Our Personal Portfolio</span
+							>
+						</a>
+					</div>
+					<!-- Primary Navbar items -->
+					<div class="hidden md:flex items-center space-x-1">
+						<a
+							href=""
+							class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold "
+							>Home</a
+						>
+						<a
+							href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>About Us</a
+						>
+						<a
+							href=""
+							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+							>Contact Us</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+    <!--Header Section-->
+    <div id="welcome-section" class="max-w-screen-lg bg-indigo-500 shadow-2xl rounded-lg mx-auto text-center py-12 mt-4">
+        <h1 class="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
+            Hello, We are Hendrid and Grace.
+        </h1>
+        <h2 class="text-1xl leading-9 font-bold tracking-tight text-grey sm:text-2xl sm:leading-10"><em>We are software developers in the making</em></h2>
+        <div class="mt-8 flex justify-center">
+            <div class="inline-flex rounded-md bg-white shadow">
+                <a href="#" class="text-gray-700 font-bold py-2 px-6">
+                    Explore our website
+                </a>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-2xl px-16 leading-9 font-bold tracking-tight text-indigo sm:text-2xl sm:leading-10">Explore our projects</h2>
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+        <!--Card 1-->
+        
+        <div class="rounded overflow-hidden shadow-lg">
+          <img class="w-full max-h-44" src="img/computer.png" alt="computer">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Hardware Services</div>
+            <p class="text-gray-700 text-base">
+                We work with customers to identify their IT hardware and software related issues, troubleshoot and resolve the issues while ensuring customer satisfaction.
+            </p>
+          </div>
+         <!-- <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>-->
+        </div>
+        <!--Card 2-->
+        <div class="rounded overflow-hidden shadow-lg">
+          <img class="w-full max-h-44" src="img/office.png" alt="Office">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Microsoft Office</div>
+            <p class="text-gray-700 text-base">
+              We have completed multiple projects using Microsoft office suites such as payroll system on Excel, automated workflows on SharePoint, complex excel macros and so much more.          </p>
+          </div>
+          <!--<div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
+          </div>-->
+        </div>
+    
+        <!--Card 3-->
+        <div class="rounded overflow-hidden shadow-lg">
+          <img class="w-full max-h-44" src="img/code.jpg" alt="automation">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Automation</div>
+            <p class="text-gray-700 text-base">
+              Work life doesn't need to always be hard. Try out our custom built automated tools that makes everyday repeated work easier and beautiful for you.
+            </p>
+          </div>
+          <!--<div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
+          </div>-->
+        </div>
+      </div>
     </div>
 </body>
 </html>
