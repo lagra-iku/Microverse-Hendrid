@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="bg-white shadow-lg">
-		<div class="max-w-6xl mx-auto px-4">
+    <nav id="nav-bar" class="bg-white shadow-lg ">
+		<div class="w-screen px-4 bg-white shadow-lg fixed">
 			<div class="flex justify-between">
 				<div class="flex space-x-7">
 					<!-- Website Logo -->
@@ -25,16 +25,16 @@
 					<div class="hidden md:flex items-center space-x-1">
 						<a
 							href=""
-							class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold "
+							class="py-4 px-2 text-indigo-500 border-b-4 border-indigo-500 font-semibold "
 							>Home</a
 						>
 						<a
-							href=""
+							href="#projects"
 							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
 							>About Us</a
 						>
 						<a
-							href=""
+							href="#contact"
 							class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
 							>Contact Us</a
 						>
@@ -44,11 +44,11 @@
 		</div>
 	</nav>
     <!--Header Section-->
-    <div id="welcome-section" class="max-w-screen-lg bg-indigo-500 shadow-2xl rounded-lg mx-auto text-center py-12 mt-4">
+    <div id="welcome-section" class=" bg-indigo-500 shadow-2xl mx-auto text-center py-24 mb-16">
         <h1 class="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
-            Hello, We are Hendrid and Grace.
+            Hello, we are Hendrid and Grace.
         </h1>
-        <h2 class="text-1xl leading-9 font-bold tracking-tight text-grey sm:text-2xl sm:leading-10"><em>We are software developers in the making</em></h2>
+        <h2 class="text-1xl leading-9 font-bold tracking-tight text-gray-700 sm:text-2xl sm:leading-10"><em>We are software developers in the making</em></h2>
         <div class="mt-8 flex justify-center">
             <div class="inline-flex rounded-md bg-white shadow">
                 <a href="#" class="text-gray-700 font-bold py-2 px-6">
@@ -57,8 +57,11 @@
             </div>
         </div>
     </div>
-    <h2 class="text-2xl px-16 leading-9 font-bold tracking-tight text-indigo sm:text-2xl sm:leading-10">Explore our projects</h2>
-    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <!--Projects section-->
+    <div id="projects" class="container mx-auto px-4">
+    <h1 class="text-3xl italic text-gray-700 text-center py-16">Software developers are the creative minds behind computer programs. Some develop the applications that allow people to do specific tasks on a computer or another device. Others develop the underlying systems that run the devices or that control networks.</h1>
+    <h2 class="text-2xl px-8 leading-9 font-bold tracking-tight text-indigo sm:text-2xl sm:leading-10">Explore our projects</h2>
+    <div class="project-tile p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-5">
         <!--Card 1-->
         
         <div class="rounded overflow-hidden shadow-lg">
@@ -69,11 +72,13 @@
                 We work with customers to identify their IT hardware and software related issues, troubleshoot and resolve the issues while ensuring customer satisfaction.
             </p>
           </div>
-         <!-- <div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-          </div>-->
+        <div class="mt-8 px-6 pt-4 pb-2 flex justify-end">
+            <div class="inline-flex rounded-md bg-indigo-500 shadow">
+                <a href="https://github.com/lagra-iku/Microverse-Hendrid" target="_blank" class="text-white font-bold py-2 px-6">
+                    Explore
+                </a>
+            </div>
+        </div>
         </div>
         <!--Card 2-->
         <div class="rounded overflow-hidden shadow-lg">
@@ -81,13 +86,15 @@
           <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">Microsoft Office</div>
             <p class="text-gray-700 text-base">
-              We have completed multiple projects using Microsoft office suites such as payroll system on Excel, automated workflows on SharePoint, complex excel macros and so much more.          </p>
+              We have completed multiple projects using Microsoft office suites such as payroll system on Excel, automated workflows on SharePoint etc.        </p>
           </div>
-          <!--<div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
-          </div>-->
+          <div class="mt-8 px-6 pt-4 pb-2 flex justify-end">
+            <div class="inline-flex rounded-md bg-gray-500 shadow">
+                <a href="https://github.com/lagra-iku/Microverse-Hendrid" target="_blank" class="text-white font-bold py-2 px-6">
+                    Explore
+                </a>
+            </div>
+        </div>
         </div>
     
         <!--Card 3-->
@@ -99,13 +106,45 @@
               Work life doesn't need to always be hard. Try out our custom built automated tools that makes everyday repeated work easier and beautiful for you.
             </p>
           </div>
-          <!--<div class="px-6 pt-4 pb-2">
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
-          </div>-->
+          <div class="mt-8 px-6 pt-4 pb-2 flex justify-end">
+            <div class="inline-flex rounded-md bg-indigo-500 shadow">
+                <a href="https://github.com/lagra-iku/Microverse-Hendrid"  target="_blank" class="text-white font-bold py-2 px-6">
+                    Explore
+                </a>
+            </div>
         </div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg">
+            <img class="w-full max-h-44" src="img/software.jpg" alt="software">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Software Configuration</div>
+              <p class="text-gray-700 text-base">
+                IT process automation and orchestration provide organizations the ability to integrate disparate tools and processes across their environment.
+              </p>
+            </div>
+            <div class="mt-8 mb-4 px-6 pt-4 pb-2 flex justify-end">
+                <div class="inline-flex rounded-md bg-gray-500 shadow">
+                    <a href="https://github.com/lagra-iku/Microverse-Hendrid" target="_blank" class="text-white font-bold py-2 px-6">
+                        Explore
+                    </a>
+                </div>
+            </div>
+          </div>
       </div>
+    </div>
+    <!--Contact us-->
+    <div id="contact" class=" bg-gray-500 shadow-2xl h-96 mx-auto text-center py-24">
+        <div><h2 class="text-3xl leading-9 font-bold tracking-tight text-white sm:text-4xl sm:leading-10">
+            Journey with us as we start with our first step.
+        </h2></div>
+        <div class="mt-8"> 
+            <a href="#" class="text-white font-bold py-2 px-6"> GitHub </a>       
+            <a href="#" class="text-white font-bold py-2 px-6">  Twitter </a>       
+            <a href="#" class="text-white font-bold py-2 px-6"> Send a mail </a>       
+            <a href="#" class="text-white font-bold py-2 px-6"> Facebook </a>       
+            <a href="#" class="text-white font-bold py-2 px-6">Call Us </a>               </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
